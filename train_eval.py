@@ -24,9 +24,9 @@ if __name__ == '__main__':
        # train 1 epoch
         print('################    train    ################')
         print('################    cmd :   ', cmd)
-        #p = os.popen('python ./train.py' + cmd)
-        #for l in p:
-        #    print(l.strip())
+        p = os.popen('python ./train.py' + cmd)
+        for l in p:
+            print(l.strip())
 
         # eval
         print('################    eval    ################')
