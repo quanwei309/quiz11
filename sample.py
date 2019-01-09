@@ -63,7 +63,7 @@ with tf.Session() as sess:
         sentence = title
         #word_index = pred[0].argsort()[-1]
         word_index = np.argmax(pred, axis=-1)
-        print("word_index : ",word_index)
+        #print("word_index : ",word_index)
         # generate sample
         for i in range(64):
 
