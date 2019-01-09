@@ -51,7 +51,7 @@ with tf.Session() as sess:
         # feed title
         for head in title:
             input = utils.index_data(np.array([[head]]), dictionary)
-            print(head,input)
+            #print(head,input)
             state = sess.run(model.init_state, feed_dict={model.X: input})
             feed_dict = {model.X: input,
                          model.init_state: state,
